@@ -26,18 +26,18 @@ To get started with RECAPS, follow these steps:
 4. Run the main script: `python main.py`
 5. Interact with the RECAPS interface to input your research question and explore the generated propositions and DAG.
 
-For detailed usage instructions and API documentation, please refer to the [wiki](https://github.com/yourusername/RECAPS/wiki).
+For detailed usage instructions and API documentation, please refer to the [wiki](https://github.com/ReLink-Inc/RECAPS/wiki).
 
 ## Contributing
 
-We welcome contributions from the research community to enhance RECAPS and make it an even more powerful tool for research exploration and collaboration. If you'd like to contribute, please follow our [contribution guidelines](https://github.com/yourusername/RECAPS/blob/main/CONTRIBUTING.md) and submit a pull request.
+We welcome contributions from the research community to enhance RECAPS and make it an even more powerful tool for research exploration and collaboration. If you'd like to contribute, please follow our [contribution guidelines](https://github.com/ReLink-Inc/RECAPS/blob/main/CONTRIBUTING.md) and submit a pull request.
 
 ## License
 
-RECAPS is released under the [MIT License](https://github.com/yourusername/RECAPS/blob/main/LICENSE).
+RECAPS is released under the [MIT License](https://github.com/ReLink-Inc/RECAPS/blob/main/LICENSE).
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to us at admin@relinkapp.com or open an issue on the [GitHub repository](https://github.com/yourusername/RECAPS/issues).
+If you have any questions, suggestions, or feedback, please feel free to reach out to us at admin@relinkapp.com or open an issue on the [GitHub repository](https://github.com/ReLink-Inc/RECAPS/issues).
 
 Join us in revolutionizing the way we conduct research and collaborate with RECAPS!
