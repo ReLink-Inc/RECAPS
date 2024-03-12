@@ -1,6 +1,6 @@
 # RECAPS: Research Exploration and Collaboration Agent for Proposition Synthesis
 
-Welcome to RECAPS, a cutting-edge research copilot designed to revolutionize the way researchers approach complex questions and collaborate on projects. Our goal is to streamline the research process by leveraging advanced algorithms and natural language processing techniques to generate a comprehensive and intuitive representation of research findings.
+Welcome to RECAPS, a cutting-edge research copilot designed to revolutionize the way researchers approach complex questions and collaborate on projects. Our goal is to streamline the research process by leveraging Large Language Models, advanced algorithms/prompting techniques, and natural language processing techniques to generate a comprehensive and intuitive representation of research findings.
 
 ## Features
 
