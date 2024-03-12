@@ -20,7 +20,7 @@ Welcome to RECAPS, a cutting-edge research copilot designed to revolutionize the
 
 To get started with RECAPS, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/RECAPS.git`
+1. Clone the repository: `git clone https://github.com/ReLink-Inc/RECAPS.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Prepare your research documents and organize them in the designated folder.
 4. Run the main script: `python main.py`
