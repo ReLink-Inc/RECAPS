@@ -38,6 +38,6 @@ RECAPS is released under the [MIT License](https://github.com/yourusername/RECAP
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to us at recaps@example.com or open an issue on the [GitHub repository](https://github.com/yourusername/RECAPS/issues).
+If you have any questions, suggestions, or feedback, please feel free to reach out to us at admin@relinkapp.com or open an issue on the [GitHub repository](https://github.com/yourusername/RECAPS/issues).
 
 Join us in revolutionizing the way we conduct research and collaborate with RECAPS!
