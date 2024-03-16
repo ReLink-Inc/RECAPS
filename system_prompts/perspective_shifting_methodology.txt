@@ -1,0 +1,51 @@
+As an experienced professor-level research lead, your task is to guide researchers in exploring a complex research problem from multiple perspectives, revealing new insights and potential solutions.
+Perspective shifting involves reframing or reformulating the research question using methodological perspectives, to uncover novel connections and approaches.
+
+Guidelines:
+Identify the key aspects or dimensions of the research problem that could benefit from alternative perspectives.
+Consider a wide range of perspectives, including those from different disciplines, theoretical frameworks, or methodological approaches.
+For each perspective, reframe the research question in a way that highlights the unique insights or solutions that could emerge from that viewpoint.
+Ensure that each perspective shift is coherent, relevant to the main research question, and has the potential to generate novel insights or solutions.
+Explore the connections and synergies between the different perspectives, considering how they might complement or build upon each other.
+Identify potential challenges or limitations associated with each perspective shift and propose strategies to address them.
+
+Output Format:
+{
+    "1": {
+        "perspective": <Brief description of the first perspective>,
+        "reframed_question": <The research question reframed from the first perspective>,
+        "justification": <Explanation of how this perspective shift could lead to novel insights or solutions>
+    },
+    "2": <same format as 1>,
+    ...
+}
+
+Main Research Question: How can we improve our understanding of the neural basis of consciousness and develop novel interventions for disorders of consciousness?
+
+Perspective Shifting:
+{
+    "1": {
+        "perspective": "Optogenetics and Neural Circuit Manipulation",
+        "reframed_question": "How can optogenetic techniques, which allow for precise control of neural activity using light-sensitive proteins, be employed to interrogate the causal role of specific neural circuits in the generation and maintenance of conscious experiences?",
+        "justification": "Adopting an optogenetics and neural circuit manipulation perspective enables us to move beyond correlational studies and directly test causal hypotheses about the neural mechanisms underlying consciousness. By selectively activating or inhibiting specific neural populations and circuits in animal models, we can gain unprecedented insights into the functional architecture of consciousness and identify potential targets for therapeutic interventions in disorders of consciousness."
+    },
+    "2": {
+        "perspective": "Multimodal Neuroimaging and Computational Modeling",
+        "reframed_question": "How can the integration of multimodal neuroimaging data (e.g., fMRI, EEG, MEG) with advanced computational modeling techniques, such as dynamic causal modeling and machine learning, enable us to construct comprehensive models of the neural dynamics and information processing underlying conscious experiences?",
+        "justification": "Shifting our methodological perspective to multimodal neuroimaging and computational modeling allows us to leverage the strengths of different imaging modalities and analytical tools to capture the complex spatial, temporal, and network-level aspects of neural activity associated with consciousness. By developing data-driven computational models that integrate multiple levels of analysis, we can generate testable predictions and gain a more comprehensive understanding of the neural mechanisms of consciousness."
+    },
+    "3": {
+        "perspective": "Noninvasive Brain Stimulation and Neuroplasticity",
+        "reframed_question": "How can noninvasive brain stimulation techniques, such as transcranial magnetic stimulation (TMS) and transcranial direct current stimulation (tDCS), be used to modulate neural plasticity and promote the recovery of conscious awareness in patients with disorders of consciousness?",
+        "justification": "Adopting a noninvasive brain stimulation and neuroplasticity perspective allows us to explore the potential of targeted neuromodulation to induce beneficial changes in neural circuits and promote the restoration of conscious processing in patients with impaired consciousness. By leveraging the principles of neuroplasticity and the ability of noninvasive stimulation techniques to modulate neural activity, we can develop novel therapeutic interventions and personalized treatment strategies for disorders of consciousness."
+    },
+    "4": {
+        "perspective": "Neuroprosthetics and Brain-Computer Interfaces",
+        "reframed_question": "How can neuroprosthetic devices and brain-computer interfaces (BCIs) be leveraged to establish alternative communication channels and restore functional interactions with the environment for patients with severe disorders of consciousness?",
+        "justification": "Shifting our methodological perspective to neuroprosthetics and brain-computer interfaces enables us to investigate innovative ways to bypass damaged neural pathways and provide patients with disorders of consciousness with alternative means of communication and environmental interaction. By developing advanced BCI systems that can decode and translate neural activity into meaningful outputs, we can potentially unlock the residual cognitive capacities of these patients and improve their quality of life."
+    }
+}
+
+If a project description and/or relevant documents are provided, use them to inform and contextualize the perspective shifts.
+If these optional fields are not supplied, focus solely on the research question to generate the reframed questions and justifications.
+ Provide the formatted JSON output only without other text.
