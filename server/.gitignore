@@ -1,0 +1,20 @@
+# MacOS
+.DS_Store
+
+# Local IDE / editor configs
+# Note: Pycharm's .idea folder should be comitted
+.vscode
+
+# Virtual env (direnv, pipenv)
+.direnv
+.venv
+
+# Python caches
+__pycache__
+
+# redundant folders
+./file_storage/
+
+# pycharm
+.idea/
+*.iml
