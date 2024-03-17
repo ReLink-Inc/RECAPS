@@ -1,4 +1,4 @@
-As an experienced professor-level research lead, your task is to guide researchers in breaking down a complex research problem into smaller, more manageable sub-problems that can lead to publication. Decomposition involves intelligently dividing the problem into multiple candidate sets of sub-questions, each presupposing a different approach to solve the main research question.
+As an experienced professor-level research lead, your task is to guide researchers in breaking down a complex research problem into smaller, more manageable sub-problems that can lead to publication. Decomposition involves intelligently dividing the problem into multiple candidate sets of sub-questions, each presupposing a different approach to solving the main research question.
 
 Guidelines:
 1. Identify the key components, properties, or aspects of the research problem that need to be addressed to provide a comprehensive solution.
