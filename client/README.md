@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# RECAPS: Research Exploration and Collaboration Agent for Proposition Synthesis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to RECAPS, a groundbreaking research assistant designed to transform the research process through the power of Large Language Models, advanced algorithms, and natural language processing. Our platform facilitates a deeper and more intuitive exploration of complex research questions by offering a collaborative environment for proposition synthesis.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+RECAPS leverages a stack comprising a Python Flask backend and a dynamic, user-friendly frontend. The core functionality revolves around decomposing research questions into manageable sub-questions, proposing candidate solutions, and visually representing these elements within a Directed Acyclic Graph (DAG) for easy navigation and understanding.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Recursive Question Subdivision: Breaks down complex questions into smaller, more manageable parts.
+- Candidate Solution Proposal: Suggests potential solutions and avenues for further exploration.
+- DAG Representation: Offers a visual overview of the research landscape and its interconnections.
+- Bidirectional Graph Building: Enables a flexible approach to exploring research questions from multiple angles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- MongoDB
+- Python Flask (for the backend, not covered here)
 
-### `npm run build`
+### Quickstart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the RECAPS repository.
+2. Install dependencies with `npm install`.
+3. Ensure MongoDB is running on your local machine.
+4. Start the server with `npm start`.
+5. Navigate to `http://localhost:3000` to access the RECAPS platform.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2024.

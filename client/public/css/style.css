@@ -1,0 +1,30 @@
+/* Placeholder for custom styles */
+
+#dagContainer {
+  overflow: auto; /* Allows both horizontal and vertical scrolling */
+  width: 100%;
+  height: 600px;
+  padding-bottom: 50px; /* Increased padding at the bottom to ensure DAG navigation buttons are not occluded by the footer */
+}
+
+/* Styles for DAG navigation buttons */
+#dagNavigationButtons {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 60px; /* Ensure enough space below buttons to avoid overlay with the footer */
+}
+
+/* Styles for "<" and ">" buttons for navigating between different candidate sets in the DAG visualization */
+#prevDAGButton, #nextDAGButton {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Ensuring the diagram and buttons are fully visible and not covered by the footer */
+.footer {
+  position: relative;
+  z-index: 1;
+}
