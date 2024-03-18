@@ -2,14 +2,14 @@ import threading
 
 from flask import current_app, request, jsonify
 
-from pipeline import pipeline_blueprint
-from pipeline.proposition_pipeline import PropositionPipeline
+from server.pipeline import pipeline_blueprint
+from server.pipeline.example_pipeline import ExamplePipeline
 
-@pipeline_blueprint.route('/launch', methods=['POST'])
+@pipeline_blueprint.route('/example', methods=['POST'])
 def launch_pipeline():
     data = request.json
     pdf_path = data["pdf_path"]
-    pipeline = PropositionPipeline(pdf_path)
+    pipeline = ExamplePipeline(pdf_path)
     current_app.pipeline_manager.add_pipeline(pipeline)
     pipeline.run_async()
     current_app.pipeline_manager.check_and_remove_inactive_pipelines(current_app.config['pipeline_remove_after'])

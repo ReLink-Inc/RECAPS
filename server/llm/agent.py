@@ -167,7 +167,7 @@ def determine_agent_type(model_name):
         raise ValueError("Unknown model name or agent type")
 
 
-with open("configs/llm_api_keys.json") as keys:
+with open("server/configs/llm_api_keys.json") as keys:
     API_KEYS = json.load(keys)
 
 

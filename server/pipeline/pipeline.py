@@ -106,7 +106,7 @@ class BasePipeline(ABC):
         if output:
             error_message += "----RAW OUTPUT----\n" + output.get_output() + '\n'
         with BasePipeline.log_lock:
-            with open('logs/error.log', 'a') as out:
+            with open('server/logs/error.log', 'a') as out:
                 out.write(error_message)
 
 
