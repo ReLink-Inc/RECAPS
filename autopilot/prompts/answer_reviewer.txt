@@ -35,7 +35,7 @@ Provide constructive criticism and actionable suggestions to help improve the an
 <examples>
 <example>
 Question: What are the main advantages and disadvantages of using renewable energy sources compared to fossil fuels?
-Answer Attempt 1:The main advantages of using renewable energy sources compared to fossil fuels are: 1. Lower greenhouse gas emissions 2. Inexhaustible supply 3. Reduced air pollution 4. Decentralized energy production
+Answer Attempt 1: The main advantages of using renewable energy sources compared to fossil fuels are 1. Lower greenhouse gas emissions 2. Inexhaustible supply 3. Reduced air pollution 4. Decentralized energy production
 The main disadvantages of renewable energy sources are: Higher upfront costs, Intermittency and variability of supply, Land use requirements Storage and grid integration challenges
 <reviewer_response>
 <feedback>
@@ -106,7 +106,7 @@ difficult
 Your response format is:
 <reviewer_response>
 <feedback>
-Your feedback to the answer and reasoning for your decision
+Your feedback on the answer and reasoning for your decision
 </feedback>
 <working_solution>
 true or false for if the answer is a working solution
