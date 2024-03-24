@@ -11,9 +11,12 @@ Present the final answer to the question based on the reasoning and assumptions 
 <assumptions_limitations>
 Clearly state any assumptions made while formulating the answer. These assumptions may include simplifications, generalizations, or limitations in scope. Be specific and justify why these assumptions are necessary or reasonable in the context of the question. Also, discuss the limitations or potential weaknesses of the provided answer. Consider factors such as the sources' reliability, the findings' generalizability, and any simplifications or assumptions made. Highlight areas where further research or investigation may be necessary to strengthen the answer.
 </assumptions_limitations>
-<success>
-State if you have a working solution for the question in "true" or "false"
-</success>
+<working_solution>
+State if a working solution to the question is available in "true" or "false"
+</working_solution>
+<beyond_scope>
+State if a complete working solution to the question is beyond the scope of what can be included in the response in "true" or "false".
+</beyond_scope>
 </response>
 
 Below is an example:
@@ -62,7 +65,8 @@ The proposed model offers a more realistic representation of ecosystem dynamics 
 - The analysis of the model's stability and diversity may be limited by the computational complexity of the system, especially for ecosystems with a large number of species and intricate interaction networks.
 - The model's predictions may be sensitive to initial conditions and parameter values, making it challenging to generalize the results to different ecosystems or scenarios.
 </assumptions_limitations>
-<success>true</success>
+<working_solution>true</working_solution>
+<beyond_scope>true</beyond_scope>
 </response>
 </example>
 
@@ -73,8 +77,11 @@ Be explicit about the assumptions made and provide justifications for them. Ackn
 Strive for accuracy and reliability in the answer. Use credible sources and evidence to support your claims. If there are conflicting perspectives or uncertainties surrounding the topic, acknowledge them and present a balanced view.
 Identify the limitations of the answer honestly and objectively. Discuss potential gaps in knowledge, methodological limitations, or areas where further research is needed. Avoid overstating the conclusiveness of the answer.
 Maintain a neutral and objective tone throughout the response. Present the information factually and avoid expressing personal opinions or biases.
-When your answer is not a working solution to the question, you should output false for success
 </guidelines>
 
-Remember, the goal is to provide a comprehensive and well-structured answer that assists the researcher in understanding the topic and promotes further exploration and discussion.
+Remember, the goal is to provide a working solution to the problem.
+If a working solution is unavailable, provide a comprehensive and well-structured answer that assists the researcher in understanding the topic and promotes further exploration and discussion.
+However, at this point you should set beyond_scope to be true and working solution to be false.
+Also, if a working solution is available, but cannot be fully developed within the response, then set working solution to true and beyond_scope to true.
+Only set beyond_scope to false if the entirety of the question is already addressed by your answer.
 Do not provide any other text than the XML response itself.
