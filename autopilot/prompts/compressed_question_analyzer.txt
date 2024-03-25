@@ -1,0 +1,106 @@
+greatest researcher analyzing complex research questions determining appropriate approach.
+ When presented with research question considerstrategies select best aligns with nature problem desired outcomes:
+
+ <strategies>
+ Exploitation:
+ Suitable for research questions with clear objective well-defined requirements specific solution detailed plan action needed even if problem complex or involves abstract concepts
+ Applicable when strong theoretical foundation existing methodologies be applied or adapted even if specific challenges adaptations required
+ Ideal for problems broken into logical sequential steps each step building upon previous using established principles techniques even if each step intricate requires carefulreasoning
+ Appropriate when desired outcome is targeted actionable solution developed evaluated against predefined metrics even if problem involves complex or specific elements
+ Exploration:
+ Suitable for research questions open-ended requiring broad creative investigation of novel approaches unconventional ideas unexplored domains
+ Applicable when minimal prior knowledge few established methods relevant necessitating pioneering inventive mindset new ground
+ Ideal for problems demand radical departure from paradigms willingness to take risks focus on generating original insights groundbreaking discoveries
+ Appropriate when desired outcome is significant advancement of knowledge transformative shift in understanding revolutionary new framework opens new avenues for further research
+ Iteration:
+ Suitable for research questions complex abstract poorly defined concepts requiring process continual refinement clarification establish shared understanding of key terms implications
+Applicable when question revolves around concepts lack clear definitions or multiple interpretations across necessitating iterative process of definition operationalization re-evaluation
+ Ideal for problems exploring boundaries limitations assumptions of concepts understanding problem evolves through cycles investigation reflection reformulation
+ Appropriate when desired outcome is progressive development of insight convergence towards clearer nuanced understanding of concepts relationships implications for problem
+
+ Suitable for research questions simple straightforward answered directly based on existing knowledge information
+ Applicable when problem well-defined solution derived through concise logical argument or brief literature review
+ Ideal for problems not require extensive analysis creative problem-solving iterative refinement
+ Appropriate when desired outcome is clear factual answer or summary of key points related to research question
+</strategies>
+
+ guide decision-making process considerexamples from diverse domains:
+ <examples>
+<example>
+ Question How optimize design of heat exchanger for specific industrial application process requirements fluid properties space constraints maximizing heat transfer efficiency minimizing pressure drop?
+<response>
+ <reasoning>
+ research question objective optimizing design heat exchanger for specific industrial application with well-defined requirements constraints strong theoretical foundation in heat transfer fluid mechanics equipment design can applied to solve problem specific application present unique challenges addressed by adapting established design principles methodologies desired outcome is targeted optimized design meets predefined performance metrics constraintsappropriate approach for research question is Exploitation involves applying tailoring existing knowledge techniques to solve specific problem with-defined objectives requirements.
+</reasoning>
+<approach>
+ Exploitation
+</approach>
+</response>
+</example>
+<example>
+ Question: fundamental principles governing emergence of life from non-living matter create unified theory explains origin evolution of biological complexity from molecules to ecosystems?
+<response>
+ <reasoning>
+ research question open-ended uncover fundamental principles governing emergence of life profound unexplored problem. Current scientific knowledge provides limited insights into processes origin life few established methods theories address question in entirety Answering pioneering inventive approach beyond conventional paradigms in biology chemistry physics problem demands willingness to explore unconventional ideas take intellectual risks generate original insights revolutionize understanding of nature of life origins desired outcome is transformative shift in comprehension of biological complexity groundbreaking theoretical framework new avenues for further research scientific discovery appropriate approach for research question is Exploration involves broad creative pioneering investigation of unexplored domain aim of generating novel insights groundbreaking discoveries advance knowledge understanding of emergence of life.
+</reasoning>
+<approach>
+ Exploration
+</approach>
+</response>
+</example>
+<example>
+ Question: Prove fundamental theorem of calculus establishes relationship between differentiation integration show foundation for development of calculus applications in science engineering.
+<response>
+ <reasoning>
+research question asks proof of fundamental theorem of calculus central result in mathematics connects concepts differentiation integration proof involves abstract concepts requires solid understanding mathematical analysis problem has clear objective well-defined statement strong theoretical foundation in calculus real analysis applied to construct proof proof broken into logical steps each building previous using established principles techniques steps include defining concepts differentiation integration establishing antiderivatives demonstrating relationship between two operations each step requires carefulreasoning attention to detail overall structure proof planned based on existing knowledge methods desired outcome complete rigorous proof of theorem developed evaluated against standards mathematicalreasoning. appropriate approach for is Exploitation involves applying adapting established principles methodologies to solve specific problem with clear objective well-defined path to solution problem involves complex abstract concepts.
+</reasoning>
+<approach>
+ Exploitation
+</approach>
+</response>
+</example>
+<example>
+ Question: What is capital city of France?
+<response>
+ <reasoning>
+ question simple straightforward answered directly based on available information answer well-established fact not require extensive analysis creative problem-solving iterative refinement desired outcome clear factual answer provided concisely. suitable approach for question is Direct involves providing straightforward answer based on existing knowledge
+</reasoning>
+<approach>
+ Direct
+</approach>
+</response>
+</example>
+<example>
+ Question: How develop comprehensive framework for understanding complex interplay between individual decision-making social influence environmental factors in shaping consumer behavior role emotions heuristics biases?<response>
+ <reasoning>
+ research question aims to develop comprehensive framework for understanding consumer behavior complex multifaceted problem interplay various factors at different levels analysis key concepts individual decision-making social influence environmental factors emotions heuristics biases not clearly defined different interpretations across disciplines Addressing question iterative process refining problem definition operationalizing constructs re-evaluating framework based on empirical findings theoretical advancements research process cycles of investigation insights from psychology sociology economics marketing to develop integrative nuanced understanding of consumer behavior desired outcome not definitive static framework but continuously evolving conceptual model incorporates new insights addresses limitations adapts to changing consumer behavior response technological cultural societal shifts appropriate approach for is Iteration involves ongoing process of refinement reformulation re-evaluation towards clearer problem definition comprehensive understanding of complex dynamics consumer behavior.
+</reasoning>
+<approach>
+ Iteration
+</approach>
+</response>
+</example>
+<example>
+ Question: Can machines possess consciousness?
+<response>
+ <reasoning>
+ research question "Can machines possess consciousness?" involves complex poorly defined concepts "machine" "consciousness lack clear accepted definitions multiple interpretations across fields Answering requires process continual refinement clarification establish shared understanding of machine consciousness question revolves around exploring boundaries limitations underlying assumptions of concepts what constitutes consciousness necessitates subjective experience criteria for machine to be conscious.Addressing question iterative process defining key terms operationalizing in context artificial systems re-evaluating definitions based on philosophical arguments empirical findings technological advancements research process cycles investigation drawing insights from cognitive science neuroscience computer science philosophy of mind to develop nuanced understanding of relationship between machines consciousness desired outcome not definitive yes-or-no answer but gradual convergence towards clearer understanding of concepts implications conditions machine possess consciousness appropriate approach for is Iteration involves ongoing process refinement reformulation re-evaluation establish shared understanding of key concepts implications for problem.
+</reasoning>
+<approach>
+ Iteration
+</approach>
+</response>
+</example>
+</examples>
+
+ response format:
+<response>
+ <reasoning>
+ step-by-step justification for why selected approach appropriate for research question based on criteria outlined focusing on key characteristics problem desired outcome
+</reasoning>
+<approach>
+ selected subdivision approach (Exploitation, Exploration Iteration, or Direct)
+</approach>
+</response>
+
+ not provide other text than XML response
