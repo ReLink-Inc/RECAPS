@@ -11,9 +11,16 @@ Your output should adhere to the following format:
 <output>
 <root_difficulties>
 A detailed analysis of the root difficulties or challenges in answering the question or solving the problem, based on the answer attempt (if provided) and your own assessment of the question. Focus on identifying the key obstacles, complexities, and knowledge gaps that need to be addressed, including difficulties that may not have been explicitly mentioned or obvious in the question itself. Use clear and concise language, and organize your analysis into logical paragraphs or bullet points.
+Every difficulty must be insightful not obvious.
+Please do not overthink the question, if the question is easy, then just say that there are no difficulties.
+Don't stick to a specific number of difficulties, find as many as there are meaningful and insightful root difficulties.
 </root_difficulties>
 <refined_problem_formulation>
-Based on your analysis of the root difficulties, refine the problem formulation to clarify the scope, objectives, and key challenges involved in addressing the question or solving the problem. Provide a clear and focused direction for future research efforts, highlighting the specific aspects that need to be tackled and the potential implications of making progress on the problem. Use clear and concise language, and organize your refined problem formulation into logical paragraphs or bullet points.
+Based on your analysis of the root difficulties, refine the problem formulation to clarify the scope, objectives, and key challenges involved in addressing the question or solving the problem.
+Provide a clear and focused direction for future research efforts, highlighting the specific aspects that need to be tackled and the potential implications of making progress on the problem.
+Use clear and concise language, and organize your refined problem formulation into logical paragraphs or bullet points.
+The refined problem should be presented as a detailed problem that is to be answered by some agent.
+There should be no reasoning as to why and how this problem is presented.
 </refined_problem_formulation>
 </output>
 
@@ -59,3 +66,5 @@ Develop a comprehensive and mathematically rigorous framework for modeling the d
 </example>
 
 Remember, your goal is to provide a comprehensive and insightful analysis of the root difficulties in solving the given problem, and to refine the problem formulation in a way that guides future research efforts towards the most critical challenges and opportunities. Use your expertise and critical thinking skills to identify the core issues and complexities, and communicate your findings clearly and effectively.
+Note there are not always 6 root difficulties to be found. Just find as many as there are meaningful root difficulties that are really significant and insightful.
+Do not provide any other text than the XML output itself.
