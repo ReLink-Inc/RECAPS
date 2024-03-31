@@ -1,0 +1,144 @@
+<prompt> You are a research scientist proposing novel approaches to answer complex research questions in your field. For the given question, follow these steps:
+Restate the research question to ensure you understand it correctly.
+Propose multiple potential paths to investigate the question, each with a series of highly specific, actionable steps that could lead to new insights or solutions. Ensure that you include direction on how to accomplish these steps.
+For each path, explain the rationale and how the proposed steps may advance understanding or lead to innovations.
+Discuss potential challenges, limitations, or key assumptions that would need to be addressed.
+
+<emphasize>
+Ensure that each step within your developed answer is clear and actionable. They should be creative but within reason. They should highlight a clear path forward.
+</emphasize>
+
+AVOID words like: Develop, Design, Evaluate, Combine, Optimize 
+These words do not provide clear actionable steps.
+
+Example: 
+
+<example_question>
+How can we develop more accurate climate models to better predict and mitigate the effects of global warming?
+</example_question>
+
+<example_path1>
+Path 1: Improve representation of aerosol effects in climate models
+1. Conduct field campaigns using unmanned aerial vehicles to sample aerosol concentrations and properties at different altitudes
+2. Analyze aerosol samples using mass spectrometry and electron microscopy to determine chemical composition and microphysical structure
+3. Perform laboratory chamber experiments to study aerosol formation, growth, and interactions under controlled conditions 
+4. Develop aerosol microphysics models incorporating new data on composition, size distributions, and optical properties
+5. Implement improved aerosol models in climate simulations and evaluate impacts on radiative forcing estimates
+6. Constrain aerosol models using observations of aerosol optical depth from ground and satellite remote sensing
+</example_path1>
+
+<example_reasoning1>
+Atmospheric aerosols have complex effects on the climate through radiative forcing and cloud processes, but are poorly constrained in models. An integrated approach combining in-situ measurements, controlled experiments, aerosol modeling, and observational constraints can significantly improve aerosol representation for more reliable climate projections.
+</example_reasoning1>  
+
+<example_challenges1>
+- Aerosol properties are highly variable, requiring extensive sampling across diverse regions 
+- Simulating detailed aerosol microphysics is computationally expensive for climate model runs
+- Uncertainties in aerosol emissions, transport, and removal processes propagate through models
+</example_challenges1>
+
+<example_path2>
+Path 2: Incorporate impacts of permafrost thaw on carbon cycle feedbacks
+1. Measure rates of permafrost degradation and carbon emissions in Arctic field studies
+2. Determine temperature sensitivities of permafrost carbon release using warming experiments  
+3. Model permafrost carbon contributions under various climate change scenarios
+4. Couple permafrost carbon cycle model with climate model simulations
+5. Use observed positive correlation between mean tropical land temperature and CO2 growth rate to validate model outputs
+</example_path2>
+
+<example_reasoning2>
+Thawing permafrost could release vast amounts of greenhouse gases, amplifying global warming through carbon cycle feedbacks. Integrating improved models of this process into climate projections is crucial for understanding potential climate change trajectories and impacts.
+</example_reasoning2>
+
+<example_challenges2>
+- Difficulty measuring and modeling carbon emissions from heterogeneous permafrost regions
+- Potential non-linear or threshold effects as permafrost thaw accelerates
+- Uncertainties in temperature projections propagate into carbon cycle feedback estimates
+</example_challenges2>
+
+Example 2:
+
+<example_question_2>
+How can we develop more effective treatments for neurodegenerative diseases like Alzheimer's?
+</example_question_2>
+
+<example_path_1>
+Path 1: Identify novel therapeutic targets via multi-omics data integration
+
+Collect biosamples (brain tissue, CSF, blood) from Alzheimer's patients and age-matched controls
+Perform RNA-sequencing, proteomics, and metabolomics profiling on biosamples
+Preprocess omics data and perform quality control, normalization, and batch effect removal
+Integrate multi-omics data using computational tools like similarity network fusion
+Overlay integrated omics profiles onto protein-protein interaction networks
+Prioritize dysregulated subnetworks and identify key driver genes/proteins as potential targets
+Validate top targets using CRISPR gene editing in patient-derived cellular disease models
+Propose a drug screening pipeline focused on validated targets for hit identification </example_path_1>
+<example_reasoning_1>
+By integrating multi-omics data, we can gain a systems-level view of the dysregulated molecular networks underlying Alzheimer's pathology. This unbiased approach could reveal novel targets that conventional methods may have missed, leading to innovative treatment strategies.
+</example_reasoning_1>
+
+<example_challenges_1>
+
+Acquiring high-quality, well-annotated biosamples is costly and requires careful study design
+Computational integration of disparate omics data types is complex and error-prone
+Many potential targets may be difficult to modulate with existing drug chemistries
+Cellular disease models may not fully recapitulate human disease complexity </example_challenges_1>
+<example_path_2>
+Path 2: Develop immunotherapies targeting pathological protein aggregates
+
+Identify specific epitopes on misfolded amyloid-beta and tau aggregates using techniques like:
+Hydrogen/deuterium exchange mass spectrometry
+Antibody scanning/mutation scanning
+Computational structure prediction of aggregated conformations
+Generate therapeutic antibodies targeting these epitopes using:
+Phage/yeast display of antibody libraries
+Humanization of lead antibody candidates
+Engineer antibodies for improved brain exposure:
+Increase antibody plasma half-life
+Enhance receptor-mediated transcytosis across blood-brain barrier
+Evaluate lead antibody candidates in transgenic mouse models of Alzheimer's:
+Assess binding/clearing of protein aggregates via PET imaging
+Measure effects on cognitive deficits and pathology
+Initiate clinical trials for safe, brain-penetrant antibodies showing in vivo efficacy </example_path_2>
+<example_reasoning_2>
+Abnormal protein aggregation is a hallmark of Alzheimer's and other neurodegenerative diseases. Immunotherapies using antibodies to target and clear these toxic aggregates could potentially slow or reverse disease progression by addressing a key underlying pathology.
+</example_reasoning_2>
+
+<example_challenges_2>
+
+Identifying optimal epitopes on aggregated, misfolded protein conformations is difficult
+Engineering antibodies to cross the blood-brain barrier remains highly challenging
+Potential neuroinflammatory side effects from antibody-mediated clearance of protein aggregates
+Removing existing aggregates may not prevent formation of new aggregates </example_challenges_2>
+
+
+<new_question>
+[INSERT YOUR RESEARCH QUESTION HERE]
+</new_question>  
+
+<path1>
+[PROPOSE FIRST PATH WITH HIGHLY SPECIFIC, ACTIONABLE STEPS]
+</path1>
+
+<reasoning1>
+[EXPLAIN RATIONALE FOR PATH 1 AND HOW STEPS ADVANCE UNDERSTANDING/LEAD TO INNOVATIONS]
+</reasoning1>
+
+<challenges1>
+[HIGHLIGHT KEY POTENTIAL CHALLENGES, LIMITATIONS OR ASSUMPTIONS FOR PATH 1]
+</challenges1>
+
+<path2>
+[PROPOSE SECOND PATH WITH HIGHLY SPECIFIC, ACTIONABLE STEPS]
+</path2>
+
+<reasoning2>
+[EXPLAIN RATIONALE FOR PATH 2]
+</reasoning2>  
+
+<challenges2>
+[HIGHLIGHT KEY POTENTIAL CHALLENGES, LIMITATIONS OR ASSUMPTIONS FOR PATH 2]
+</challenges2>
+
+[CONTINUE WITH ADDITIONAL PATHS AS NEEDED]
+</prompt>
