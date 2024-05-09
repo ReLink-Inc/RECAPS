@@ -303,7 +303,20 @@ document.addEventListener('DOMContentLoaded', function() {
             .attr("dy", "0.31em")
             .attr("x", d => d.children ? -2 : 2)
             .style("text-anchor", d => d.children ? "end" : "start")
-            .text(d => d.data.name);
+            .text(d => d.data.name)
+            .each(function(d) {
+                var bbox = this.getBBox(); // 获取文本的 bounding box
+                var padding = 2; // 设置边距
+
+                // 在文本之前插入 rect 元素
+                d3.select(this.parentNode).insert("rect", "text")
+                    .attr("x", bbox.x - padding)
+                    .attr("y", bbox.y - padding)
+                    .attr("width", bbox.width + 2*padding)
+                    .attr("height", bbox.height + 2*padding)
+                    .style("fill", "white")
+                    .style("stroke", "black");
+            });
 
             
 // this code snippet will add subquestions and let links connect to upper left corner of the subquestions
