@@ -1,17 +1,12 @@
 // Load environment variables
-require("dotenv").config();
-const mongoose = require("mongoose");
+//require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
-const MongoStore = require('connect-mongo');
 const authRoutes = require("./routes/authRoutes");
 const questionRoutes = require('./routes/questionRoutes');
 const dagDataRoutes = require('./routes/dagDataRoutes'); // Added line for importing dagDataRoutes
-
-if (!process.env.DATABASE_URL || !process.env.SESSION_SECRET) {
-  console.error("Error: config environment variables not set. Please create/edit .env configuration file.");
-  process.exit(-1);
-}
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -26,25 +21,12 @@ app.set("view engine", "ejs");
 // Serve static files
 app.use(express.static("public"));
 
-// Database connection
-mongoose
-  .connect(process.env.DATABASE_URL)
-  .then(() => {
-    console.log("Database connected successfully");
-  })
-  .catch((err) => {
-    console.error(`Database connection error: ${err.message}`);
-    console.error(err.stack);
-    process.exit(1);
-  });
-
-// Session configuration with connect-mongo
+// Session configuration
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || 'defaultSecret',
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({ mongoUrl: process.env.DATABASE_URL }),
   }),
 );
 
@@ -70,14 +52,29 @@ app.use((req, res, next) => {
   next();
 });
 
+// Local file storage functions
+const dataFilePath = path.join(__dirname, 'data.json');
+
+const readDataFromFile = () => {
+  if (!fs.existsSync(dataFilePath)) {
+    return { users: [], questions: [] };
+  }
+  const data = fs.readFileSync(dataFilePath);
+  return JSON.parse(data);
+};
+
+const writeDataToFile = (data) => {
+  fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
+};
+
 // Authentication Routes
-app.use(authRoutes);
+app.use(authRoutes(readDataFromFile, writeDataToFile));
 
 // Added questionRoutes to the middleware stack
-app.use(questionRoutes);
+app.use(questionRoutes(readDataFromFile, writeDataToFile));
 
 // Added dagDataRoutes to the middleware stack
-app.use(dagDataRoutes);
+app.use(dagDataRoutes(readDataFromFile));
 
 // Root path response
 app.get("/", (req, res) => {
