@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentData;
     let currentIndex;
+    let subSubQuestions = {}; // Track sub-subquestions for each subquestion
 
     const renderDAG = (data, setIndex) => {
         currentData = data;
@@ -104,6 +105,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 .style("height", "100%")
                 .text("+")
                 .on("click", () => addLinkedTextarea(d, nodeGroup));
+
+            // Re-render any previously added linked textareas
+            if (subSubQuestions[d.data.index]) {
+                subSubQuestions[d.data.index].forEach((_, i) => {
+                    addLinkedTextarea(d, nodeGroup, i);
+                });
+            }
         });
 
         nodes.filter(d => !d.children).append("foreignObject")
@@ -218,18 +226,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function deleteSubQuestion(index) {
         currentData.children[currentIndex].children.splice(index, 1);
+        delete subSubQuestions[index]; // Remove sub-subquestions when a subquestion is deleted
         renderDAG(currentData, currentIndex);
     }
 
-    function addLinkedTextarea(nodeData, nodeGroup) {
-        const existingTextareas = nodeGroup.selectAll("foreignObject[x*='540']").size();
-        const newXPosition = 540 + (existingTextareas * 540);
-        const newYPosition = -25 + (existingTextareas * 100);
+    function addLinkedTextarea(nodeData, nodeGroup, existingIndex = -1) {
+        const nodeIndex = nodeData.data.index;
+        if (!subSubQuestions[nodeIndex]) {
+            subSubQuestions[nodeIndex] = [];
+        }
+
+        const textareaIndex = existingIndex === -1 ? subSubQuestions[nodeIndex].length : existingIndex;
+
+        if (existingIndex === -1) {
+            subSubQuestions[nodeIndex].push("");
+        }
+
+        const newXPosition = 540;// + (textareaIndex * 540);
+        const newYPosition = -25 + (textareaIndex * 100);
 
         nodeGroup.append("foreignObject")
             .attr("width", 500)
             .attr("height", 100)
-            .attr("x",540)//newXPosition
+            .attr("x", newXPosition)
             .attr("y", newYPosition)
             .append("xhtml:div")
             .style("border", "1px solid black")
